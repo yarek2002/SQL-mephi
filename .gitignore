@@ -1,0 +1,13 @@
+# ОС и редакторы
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Локальные дампы и конфиги с паролями
+*.env
+.env.*
+*.dump
+*.sql.backup

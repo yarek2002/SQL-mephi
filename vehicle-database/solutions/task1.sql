@@ -1,0 +1,13 @@
+-- Задача 1
+-- Найти производителей и модели спортивных мотоциклов (тип Sport),
+-- у которых мощность > 150 л.с. и цена < 20 000 $.
+-- Сортировка: по мощности по убыванию.
+
+SELECT v.maker,
+       v.model
+FROM Vehicle v
+INNER JOIN Motorcycle m ON v.model = m.model
+WHERE m.horsepower > 150
+  AND m.price < 20000
+  AND m.type = 'Sport'
+ORDER BY m.horsepower DESC;
